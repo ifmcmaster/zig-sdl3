@@ -100,9 +100,7 @@ pub fn build(b: *std.Build) !void {
     if (ext_net) {
         net.setup(b, sdl3, sdl_dep_lib, c_sdl_preferred_linkage, cfg);
     }
-    if (ext_ttf) {
-        ttf.setup(b, sdl3, sdl_dep_lib, c_sdl_preferred_linkage, cfg);
-    }
+    ttf.setup(b, sdl3, sdl_dep_lib, c_sdl_preferred_linkage, cfg);
 
     _ = setupDocs(b, sdl3);
     _ = setupTest(b, cfg, extension_options);

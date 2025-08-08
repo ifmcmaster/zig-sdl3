@@ -763,7 +763,7 @@ pub const thread = @import("thread.zig");
 pub const time = @import("time.zig");
 
 /// TODO documentation.
-pub const ttf = if (extension_options.ttf) @import("ttf.zig") else void;
+pub const ttf = @import("ttf.zig");
 
 /// SDL provides time management functionality.
 /// It is useful for dealing with (usually) small durations of time.
